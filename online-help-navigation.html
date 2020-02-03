@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  body {
+    font-family: Arial;
+    line-height: 1.3;
+    padding: 20px 30px;
+    background-color: #ffffff;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  ul, #myUL {
+    list-style-type: none;
+  }
+
+  #myUL {
+    padding: 0;
+  }
+
+  ul {
+    padding-left: 0px;
+  }
+
+  li {
+    margin: 12px 0 0 15px;
+  }
+
+  li .active {
+    padding: 0;
+  }
+
+  .caret {
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none;
+  }
+
+  .caret::before {
+    content: "\25B8";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+    margin-left: -14px;
+  }
+
+  .caret-down::before {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Safari */'
+    transform: rotate(90deg);
+  }
+
+  .nested {
+    display: none;
+  }
+
+  .active {
+    display: block;
+  }
+</style>
+</head>
+<body>
+  <ul id="myUL">
+    <li><a href="#">Welkom bij Dynamics Empire Online</a></li>
+    <li><span class="caret">Aan de slag</span>
+      <ul class="nested">
+        <li><a href="#">Overzicht</a></li>
+        <li><a href="#">Nieuw</a></li>
+        <li><a href="#">Minimumbehoeften</a></li>
+        <li><a href="#">Veelgestelde vragen</a></li>
+        <li><a href="#">Bronnen voor Help en ondersteuning</a></li>
+        <li><span class="caret">Training zoeken</span>
+          <ul class="nested">
+            <li><a href="#">Trainingscatalogus</a></li>
+            <li><a href="#">Trainingscatalogus voor zakelijke besluitvormers</a></li>
+            <li><a href="#">Trainingscatalogus voor zakelijke gebruikers</a></li>
+            <li><a href="#">Trainingscatalogus voor ontwikkelaars</a></li>
+            <li><a href="#">Trainingscatalogus van functionele consultant</a></li>
+            <li><a href="#">Trainingscatalogus Pre-sales</a></li>
+            <li><a href="#">Trainingscatalogus Verkoop</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Voorbereid zijn om zaken te doen</a></li>
+        <li><a href="#">Overzicht van bedrijffunctionaliteit</a></li>
+        <li><span class="caret">Proefversies en abonnementen</span>
+          <ul class="nested">
+            <li><a href="#">Proefversies en abonnementen</a></li>
+            <li><a href="#">Probleemoplossing voor aanmelden bij Self-Service</a></li>
+            <li><a href="#">Business Central verwijderen of het abonnement erop stoppen</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Uw toegang tot de Intelligente cloud met Business Central</a></li>
+        <li><a href="#">Bezoek onze videobibliotheek</a></li>
+        <li><span class="caret">Resellers en partners</span>
+          <ul class="nested">
+            <li><a href="#">Een reseller worden</a></li>
+            <li><a href="#">Business Central uitbreiden</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><span class="caret">Werken met Business Central</span>
+      <ul class="nested">
+        <li><a href="#">Overzicht</a></li>
+        <li><a href="#">Afdrukbaar spiekblad</a></li>
+        <li><a href="#">Pagina's en informatie zoeken met Vertel me</a></li>
+        <li><a href="#">Pagina's zoeken met de Rolverkenner</a></li>
+        <li><a href="#">Veelgestelde vragen over Vertel me</a></li>
+        <li><a href="#">Sorteren, zoeken en filteren</a></li>
+        <li><a href="#">Zoeken en filteren - Veelgestelde vragen</a></li>
+        <li><a href="#">Gegevens invoeren</a></li>
+        <li><a href="#">Veelgestelde vragen over kopieren en plakken</a></li>
+        <li><a href="#">Werken met agendadatums en -tijden</a></li>
+        <li><a href="#"></a>Verplichte velden detecteren</li>
+        <li><a href="#"></a>Taal en landinstellingen wijzigen</li>
+        <li><a href="#"></a>Weergeven en bewerken in Excel</li>
+        <li><a href="#"></a>Bijlagen, koppelingen en notities op kaarten en in documenten beheren</li>
+        <li><a href="#"></a>Basisinstellingen wijzigen</li>
+        <li><a href="#"></a>Berichten beheren</li>
+        <li><span class="caret">Business Central aanpassen</span>
+          <ul class="nested">
+            <li><a href="#">Uw werkruimte personaliseren</a></li>
+            <li><a href="#">Waarom een pagina is vergrendeld voor personaliseren</a></li>
+            <li><a href="#">Lijstweergaven opslaan en personaliseren</a></li>
+            <li><a href="#">Een pagina-actie toevoegen aan uw rolcentrum</a></li>
+            <li><a href="#">Lijsten weergeven op verschillende manieren</a></li>
+          </ul>
+        </li>
+        <li><span class="caret">Rapporten afdrukken en batchverwerkingen en XMLports uitvoeren</span>
+          <ul class="nested">
+            <li><a href="#">Werken met rapporten, batchverwerkingen en XMLports</a></li>
+            <li><a href="#">Printerselectie opgeven voor rapporten</a></li>
+            <li><a href="#">Een rapport plannen voor uitvoering</a></li>
+            <li><a href="#">Opgeslagen instellingen beheren voor rapporten en batchtaken</a></li>
+            <li><a href="#">Controlelijsten weergeven vóór boeken</a></li>
+            <li><a href="#">Batchtaken en XML-poorten uitvoeren</a></li>
+          </ul>
+        </li>
+        <li><span class="caret">Wijzigen hoe extern gerichte documenten eruitzien</span>
+          <ul class="nested">
+            <li><a href="#">Indelingen van rapporten en documenten beheren</a></li>
+            <li><a href="#">De huidige rapportindeling wijzigen</a></li>
+            <li><a href="#">Aangepaste rapportlay-outs maken en wijzigen</a></li>
+            <li><a href="#">Aangepaste rapportlay-outs importeren en exporteren</a></li>
+            <li><a href="#">Aangepaste rapportlay-outs bijwerken</a></li>
+            <li><a href="#">Documentlay-outs definieren voor klanten en leveranciers</a></li>
+            <li><a href="#">Velden toevoegen aan een Word-rapportlay-out</a></li>
+          </ul>
+        </li>
+        <li><span class="caret">Sneltoetsen gebruiken</span>
+          <ul class="nested">
+            <li><a href="#">Toegankelijkheid en sneltoetsen</a></li>
+            <li><a href="#">Toetsenbordsneltoetsen</a></li>
+            <li><a href="#">Snelle toetsenbordnaslag - alleen pc</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><span class="caret">Dynamics Empire instellen</span>
+      <ul class="nested">
+        <li><a href="#">Overzicht</a></li>
+        <li><span class="caret">[Placeholder]</span>
+          <ul class="nested">
+            <li><a href="#">[Placeholder]</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><span class="caret">Best Practice Procesmodel</span>
+      <ul class="nested">
+        <li><a href="#">Proceshierarchie</a></li>
+        <li><a href="#">Bedrijfsprocessen</a></li>
+      </ul>
+    </li>
+    <li><span class="caret">Ontwikkelen</span>
+      <ul class="nested">
+        <li><a href="#">Overzicht</a></li>
+        <li><span class="caret">Eenheidsontwikkeling</span>
+          <ul class="nested">
+            <li><a href="#">Initieren ontwikkelproject</a></li>
+            <li><a href="#">Uitvoeren ontwikkelproject</a></li>
+            <li><a href="#">Afsluiten ontwikkelproject</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><span class="caret">Verhuren</span>
+      <ul class="nested">
+        <li><a href="#">Overzicht</a></li>
+        <li><span class="caret">Nieuwe verhuring</span>
+          <ul class="nested">
+            <li><a href="#">Bepalen aanbiedhuur</a></li>
+            <li><a href="#">Publiceren eenheid</a></li>
+            <li><a href="#">Selecteren kandidaten</a></li>
+            <li><a href="#">Aanbieden eenheid</a></li>
+            <li><a href="#">Verantwoorden verhuring</a></li>
+            <li><a href="#">Toewijzen eenheid</a></li>
+            <li><a href="#">Ondertekenen huurovereenkomst</a></li>
+            <li><a href="#">Opleveren eenheid</a></li>
+          </ul>
+        </li>
+        <li><span class="caret">Jaarlijkse huurverhoging</span>
+          <ul class="nested">
+            <li><a href="#">Bepalen huurverhogingsbeleid</a></li>
+            <li><a href="#">Uitvoeren huurprijsaanpassing</a></li>
+            <li><a href="#">Informeren (aanzeggen) klant</a></li>
+            <li><a href="#">Rappeleren klant</a></li>
+            <li><a href="#">Afhandelen huurverhogingsbezwaren</a></li>
+          </ul>
+        </li>
+        <li><span class="caret">Tussentijdse huurprijsaanpassing</span>
+          <ul class="nested">
+            <li><a href="#">Uitvoeren huurprijsaanpassing</a></li>
+            <li><a href="#">Informeren klant</a></li>
+          </ul>
+        </li>
+        <li><span class="caret">Huuropzegging</span>
+          <ul class="nested">
+            <li><a href="#">Registreren huuropzegging</a></li>
+            <li><a href="#">Opstellen eindafrekening</a></li>
+            <li><a href="#">Innemen eenheid</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><span class="caret">Beheren</span>
+      <ul class="nested">
+        <li><a href="#">Overzicht</a></li>
+        <li><span class="caret">Eenheidsinformatie</span>
+          <ul class="nested">
+            <li><a href="#">Beheren eenheidsinformatie</a></li>
+            <li><a href="#">Beheren verhuurbare eenheidsinformatie</a></li>
+            <li><a href="#">Beheren clusterinformatie</a></li>
+          </ul>
+        </li>
+        <li><span class="caret">Relatiebeheer</span>
+          <ul class="nested">
+            <li><a href="#">Beheren woningzoekende-informatie</a></li>
+            <li><a href="#">Beheren klantinformatie</a></li>
+            <li><a href="#">Beheren leveranciersinformatie</a></li>
+            <li><a href="#">Beheren informatie overige relaties</a></li>
+            <li><a href="#">Afhandelen vraag/klacht</a></li>
+            <li><a href="#">Afhandelen overlast</a></li>
+            <li><a href="#">Meten klanttevredenheid</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><span class="caret">Onderhouden</span>
+      <ul class="nested">
+        <li><a href="#">Overzicht</a></li>
+        <li><span class="caret">Correctief onderhoud</span>
+          <ul class="nested">
+            <li><a href="#">Uitvoeren inspectie</a></li>
+            <li><a href="#">Registreren onderhoudsverzoek</a></li>
+            <li><a href="#">Plannen onderhoudsverzoek</a></li>
+            <li><a href="#">Uitvoeren onderhoudsverzoek</a></li>
+          </ul>
+        </li>
+        <li><span class="caret">Preventief onderhoud</span>
+          <ul class="nested">
+            <li><a href="#">Initieren onderhoudsproject</a></li>
+            <li><a href="#">Uitvoeren onderhoudsproject</a></li>
+            <li><a href="#">Afsluiten onderhoudsproject</a></li>
+            <li><a href="#">Beheren onderhoudscontracten</a></li>
+            <li><a href="#">Uitvoeren contractueel onderhoud</a></li>
+          </ul>
+        </li>
+        <li><span class="caret">Magazijnbeheer</span>
+          <ul class="nested">
+            <li><a href="#">Bestellen materialen</a></li>
+            <li><a href="#">Ontvangen materialen</a></li>
+            <li><a href="#">Retourneren materialen</a></li>
+            <li><a href="#">Distribueren materialen</a></li>
+            <li><a href="#">Inventariseren voorraad</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><span class="caret">Verkopen</span>
+      <ul class="nested">
+        <li><a href="#">Overzicht</a></li>
+        <li><span class="caret">Eenheidsverkoop</span>
+          <ul class="nested">
+            <li><a href="#">Bepalen verkoopvorm</a></li>
+            <li><a href="#">Bepalen vraagprijs</a></li>
+            <li><a href="#">Aanbieden eenheid</a></li>
+            <li><a href="#">Begeleiden bezichtigingen</a></li>
+            <li><a href="#">Onderhandelen verkoopprijs</a></li>
+            <li><a href="#">Notarieel afhandelen verkoop</a></li>
+            <li><a href="#">Terugkopen eenheid</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><span class="caret">Inkopen</span>
+      <ul class="nested">
+        <li><a href="#">Overzicht</a></li>
+        <li><span class="caret">Overige inkoop</span>
+          <ul class="nested">
+            <li><a href="#">Registreren inkooporder</a></li>
+            <li><a href="#">Accorderen prestatie</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><span class="caret">Financien</span>
+      <ul class="nested">
+        <li><a href="#">Overzicht</a></li>
+        <li><span class="caret">Service en verbruik</span>
+          <ul class="nested">
+            <li><a href="#">Vaststellen kosten en opbrengsten</a></li>
+            <li><a href="#">Bepalen nieuwe voorschotten</a></li>
+            <li><a href="#">Factureren afrekening</a></li>
+            <li><a href="#">Genereren afrekenresultaat</a></li>
+          </ul>
+        </li>
+        <li><span class="caret">Uitgaande facturen</span>
+          <ul class="nested">
+            <li><a href="#">Factureren diensten correctief onderhoud</a></li>
+            <li><a href="#">Periodiek facturen huurovereenkomst</a></li>
+            <li><a href="#">Factureren verkoop onroerend goed</a></li>
+            <li><a href="#">Factureren overige diensten</a></li>
+            <li><a href="#">Crediteren overige diensten</a></li>
+          </ul>
+        </li>
+        <li><span class="caret">Betaling en ontvangst</span>
+          <ul class="nested">
+            <li><a href="#">Aanleveren incassobestand</a></li>
+            <li><a href="#">Aanleveren betaalbestand</a></li>
+            <li><a href="#">Verwerken bankmutaties</a></li>
+            <li><a href="#">Verwerken pintransacties</a></li>
+            <li><a href="#">Beheren rekening courant debiteuren</a></li>
+            <li><a href="#">Beheren rekening courant crediteuren</a></li>
+          </ul>
+        </li>
+        <li><span class="caret">Incasso</span>
+          <ul class="nested">
+            <li><a href="#">Aanmanen debiteuren</a></li>
+            <li><a href="#">Verwerken betalingsregelingen</a></li>
+            <li><a href="#">Uit handen geven vorderingen</a></li>
+          </ul>
+        </li>
+        <li><span class="caret">Inkomende facturen</span>
+          <ul class="nested">
+            <li><a href="#">Verwerken inkoopfacturen</a></li>
+          </ul>
+        </li>
+        <li><span class="caret">Financiering</span>
+          <ul class="nested">
+            <li><a href="#">Beheren leningen</a></li>
+          </ul>
+        </li>
+        <li><span class="caret">Grootboekadministratie</span>
+          <ul class="nested">
+            <li><a href="#">Beheren instellingen grootboekadministratie</a></li>
+            <li><a href="#">Boeken memoriaal</a></li>
+            <li><a href="#">Verdelen kosten naar eenheidsniveau</a></li>
+            <li><a href="#">Overboeken categoriaal naar functioneel</a></li>
+            <li><a href="#">Verwerken DAEB/niet-DAEB-verdeling</a></li>
+          </ul>
+        </li>
+        <li><span class="caret">Budgettering</span>
+          <ul class="nested">
+            <li><a href="#">Beheren budgetten</a></li>
+          </ul>
+        </li>
+        <li><span class="caret">Cashflow</span>
+          <ul class="nested">
+            <li><a href="#">Verwerken gerealiseerde cashflows</a></li>
+            <li><a href="#">Prognotiseren cashflows</a></li>
+          </ul>
+        </li>
+        <li><span class="caret">BTW-aangifte</span>
+          <ul class="nested">
+            <li><a href="#">Aangeven BTW</a></li>
+          </ul>
+        </li>
+        <li><span class="caret">Vaste activa</span>
+          <ul class="nested">
+            <li><a href="#">Beheren vaste activa</a></li>
+            <li><a href="#">Buiten gebruik stellen activum</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><span class="caret">Standaard inrichting</span>
+      <ul class="nested">
+        <li><span class="caret">Referentiedata</span>
+          <ul class="nested">
+            <li><a href="#">[Placeholder]</a></li>
+          </ul>
+        </li>
+        <li><span class="caret">Instellingen</span>
+          <ul class="nested">
+            <li><a href="#">[Placeholder]</a></li>
+          </ul>
+        </li>
+        <li><span class="caret">Machtigingensets</span>
+          <ul class="nested">
+            <li><a href="#">[Placeholder]</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><span class="caret">Release notes</span>
+      <ul class="nested">
+        <li><a href="#">Overzicht</a></li>
+        <ul class="nested">
+          <li><a href="#">[Placeholder]</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+</li>
+</ul>
+
+<script>
+var toggler = document.getElementsByClassName("caret");
+var i;
+
+for (i = 0; i < toggler.length; i++) {
+  toggler[i].addEventListener("click", function() {
+    this.parentElement.querySelector(".nested").classList.toggle("active");
+    this.classList.toggle("caret-down");
+  });
+}
+</script>
+
+</body>
+</html>
